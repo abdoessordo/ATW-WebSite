@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+
+*{
+    margin: 0;
+}
+
+
+body, html{
+    height: 100%;
+    margin: 0;
+    /* background: url(img/map.jpg) no-repeat center; */
+    background: rgb(1, 71, 71);
+    background-size: cover;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.line2{
+    margin: 0em;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    /* list-style: none; */
+    width: 100%;
+}
+.contact-section{
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+}
+
+.border{
+    width: 120px;
+    height: 10px;
+    background: rgba(20, 20, 20, 0.8);
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.contact-form{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: rgb(70, 90, 180);
+    padding: 20px 40px;
+    outline: none rgb(77, 100, 55);
+    color: #ddd;
+    transition: 0.5s;
+}
+.contact-section-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin:16px 0;
+    border:0;  
+    background:#111;
+    padding: 20px 40px;
+    outline: none;
+    color: #ddd;
+    transition: 0.5s;
+ }
+
+.contact-form-text:focus{
+    box-shadow: 0 0 10px 4px #34495e;
+}
+
+textarea.contact-form-text{
+    resize: none;
+    height: 120px;
+}
+
+.contact-form-btn{
+    border: 0;
+    background: darkorange;
+    color: #fff;
+    padding: 12px 50px;
+    margin-top: 5%;
+    margin-left: 38%;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    float: right;
+    font-size: 17px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.contact-form-btn:hover{
+    background: rgb(173, 96, 2);
+}
+
+
+.form-title{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 40px;
+    justify-content: center;
+    font-weight: bold;
+    color: darkorange;
+}
+
+.fill{
+    background-color: rgba(20, 20, 20, 0.8);
+    /* border-radius: 10px; */
+    color: white;
+}
