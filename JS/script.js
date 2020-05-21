@@ -32,59 +32,22 @@ scrollUpBtn.addEventListener("click", function () {
     })
 });
 
-check_box.addEventListener("click", function () {
-    i++;
-    i = i % 2
-    if(window.outerWidth > 1074){
-        if (i == 1) {
-            body.classList.add('mystyle1')
-            text.classList.replace('darkfont', 'whitefont')
-            darkmodeTxt.classList.replace('darkfont', 'whitefont')
-            allcities.classList.replace('darkfont', 'whitefont')
-            allfacts.classList.replace('darkfont', 'whitefont')
-            allcities.classList.replace('blackborder','whiteborder')
-            allfacts.classList.replace('blackborder','whiteborder')
-            tanger_sub.classList.replace('darkfont', 'whitefont')
-            marrakech_sub.classList.replace('darkfont', 'whitefont')
-            nav.classList.add('nav_border')
-        } else {
-            body.classList.remove('mystyle1')
-            darkmodeTxt.classList.replace('whitefont', 'darkfont')
-            text.classList.replace('whitefont', 'darkfont')
-            spe.classList.replace('mystyle3', 'spe')
-            allcities.classList.replace('whitefont', 'darkfont')
-            allfacts.classList.replace('whitefont', 'darkfont')
-            allcities.classList.replace('whiteborder','blackborder')
-            allfacts.classList.replace('whiteborder','blackborder')
-            tanger_sub.classList.replace('whitefont', 'darkfont')
-            marrakech_sub.classList.replace('whitefont', 'darkfont')
-            nav.classList.remove('nav_border')  
-        } 
-    }else{
-        if (i == 1) {
-            body.classList.add('mystyle1')
-            text.classList.replace('darkfont', 'whitefont')
-            darkmodeTxt.classList.replace('darkfont', 'whitefont')
-            spe.classList.replace('spe', 'mystyle3')
-            allcities.classList.replace('darkfont', 'whitefont')
-            allfacts.classList.replace('darkfont', 'whitefont')
-            allcities.classList.replace('blackborder','whiteborder')
-            allfacts.classList.replace('blackborder','whiteborder')
-            tanger_sub.classList.replace('darkfont', 'whitefont')
-            marrakech_sub.classList.replace('darkfont', 'whitefont')
-            nav.classList.add('nav_border')
-        } else {
-            body.classList.remove('mystyle1')
-            darkmodeTxt.classList.replace('whitefont', 'darkfont')
-            text.classList.replace('whitefont', 'darkfont')
-            spe.classList.replace('mystyle3', 'spe')
-            allcities.classList.replace('whitefont', 'darkfont')
-            allfacts.classList.replace('whitefont', 'darkfont')
-            allcities.classList.replace('whiteborder','blackborder')
-            allfacts.classList.replace('whiteborder','blackborder')
-            tanger_sub.classList.replace('whitefont', 'darkfont')
-            marrakech_sub.classList.replace('whitefont', 'darkfont')
-            nav.classList.remove('nav_border')
-        }
+function darkmode(){
+    body.classList.toggle('mystyle1')
+    text.classList.toggle('whitefont')
+    darkmodeTxt.classList.toggle('whitefont')
+    allcities.classList.toggle('whitefont')
+    allcities.classList.toggle('whiteborder')
+    allfacts.classList.toggle('whitefont')
+    allfacts.classList.toggle('whiteborder')
+    tanger_sub.classList.toggle('whitefont')
+    marrakech_sub.classList.toggle('whitefont')
+    nav.classList.toggle('nav_border')
+
+    if(window.outerWidth < 1074){
+        spe.classList.toggle('mystyle3')
+        spe.classList.toggle('spe')
     }
-});
+}
+
+check_box.addEventListener("click", darkmode);
